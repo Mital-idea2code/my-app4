@@ -1,6 +1,6 @@
 .hero-section {
   background-color: #f0f0f0; /* Set background color */
-  padding: 50px 0; /* Set padding */
+  padding: 50px 0 0 0; /* Set padding */
 }
 
 .heroImg {
@@ -236,4 +236,43 @@
   border-left: 4px solid #00c8da;
   padding: 6px;
   font-size: 20px;
+}
+.home-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  height: 150px;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.social-icon {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0 10px; /* Adjust the horizontal spacing between icons */
+  transition: color 0.3s ease; /* Add a smooth color transition effect */
+}
+.fb-color {
+  color: #3b5999;
+}
+.linkedin-color {
+  color: #0077b5;
+}
+.twitter-color {
+  color: #1da1f2;
+}
+.google-color {
+  color: #4285f4;
+}
+.insta-color {
+  color: #833ab4;
+}
+.social-icon:hover {
+  color: #007bff; /* Change the color on hover */
 }
