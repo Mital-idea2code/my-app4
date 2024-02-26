@@ -1,201 +1,44 @@
-.hero-section {
-  background-color: #f0f0f0; /* Set background color */
-  padding: 50px 0 0 0; /* Set padding */
+/* src/components/HomePage.css */
+.home-container {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content,
+.right-content {
+  text-align: center;
+  padding: 0px;
+  height: 100vh; /* Full screen height */
+}
+.center-content {
+  z-index: 999;
+}
+
+.social-icons {
+  z-index: 9999;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-boxes {
+  z-index: 9999;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .heroImg {
-  /* max-width: 120% !important;
-  margin-left: -150px; */
-  clip-path: polygon(
-    63% 0%,
-    64% 0%,
-    65% 0%,
-    66% 1%,
-    67% 1%,
-    67% 2%,
-    68% 3%,
-    69% 4%,
-    70% 5%,
-    70% 8%,
-    71% 10%,
-    71% 11%,
-    71% 12%,
-    72% 15%,
-    74% 16%,
-    75% 15%,
-    75% 15%,
-    76% 14%,
-    77% 14%,
-    78% 14%,
-    79% 14%,
-    80% 14%,
-    83% 13%,
-    83% 14%,
-    84% 16%,
-    85% 18%,
-    85% 21%,
-    86% 23%,
-    87% 25%,
-    88% 27%,
-    89% 29%,
-    89% 30%,
-    90% 32%,
-    90% 34%,
-    90% 35%,
-    92% 38%,
-    92% 38%,
-    92% 41%,
-    92% 45%,
-    92% 47%,
-    91% 48%,
-    91% 50%,
-    91% 53%,
-    92% 55%,
-    92% 60%,
-    93% 62%,
-    93% 65%,
-    94% 67%,
-    95% 70%,
-    96% 73%,
-    97% 74%,
-    96% 77%,
-    96% 80%,
-    96% 82%,
-    96% 85%,
-    96% 88%,
-    95% 91%,
-    94% 94%,
-    92% 95%,
-    92% 96%,
-    91% 97%,
-    89% 98%,
-    87% 100%,
-    86% 100%,
-    86% 100%,
-    84% 100%,
-    83% 100%,
-    83% 100%,
-    81% 100%,
-    79% 100%,
-    77% 100%,
-    76% 100%,
-    74% 100%,
-    72% 100%,
-    70% 100%,
-    68% 100%,
-    68% 100%,
-    67% 97%,
-    67% 95%,
-    66% 93%,
-    64% 93%,
-    63% 93%,
-    62% 93%,
-    61% 93%,
-    59% 90%,
-    58% 90%,
-    58% 92%,
-    58% 94%,
-    58% 94%,
-    56% 96%,
-    55% 96%,
-    55% 96%,
-    55% 96%,
-    54% 94%,
-    53% 92%,
-    51% 91%,
-    50% 91%,
-    49% 91%,
-    48% 92%,
-    47% 95%,
-    47% 97%,
-    47% 97%,
-    46% 96%,
-    46% 95%,
-    43% 95%,
-    43% 95%,
-    41% 95%,
-    40% 96%,
-    40% 96%,
-    39% 96%,
-    38% 95%,
-    38% 95%,
-    38% 95%,
-    38% 92%,
-    38% 87%,
-    39% 86%,
-    37% 83%,
-    36% 83%,
-    36% 83%,
-    35% 83%,
-    33% 85%,
-    33% 85%,
-    31% 85%,
-    30% 84%,
-    28% 82%,
-    28% 82%,
-    27% 81%,
-    25% 79%,
-    25% 77%,
-    25% 73%,
-    25% 70%,
-    25% 66%,
-    26% 64%,
-    27% 64%,
-    29% 64%,
-    30% 64%,
-    30% 64%,
-    30% 61%,
-    28% 58%,
-    27% 54%,
-    26% 50%,
-    26% 50%,
-    26% 48%,
-    26% 46%,
-    26% 43%,
-    26% 42%,
-    27% 39%,
-    28% 38%,
-    30% 39%,
-    31% 39%,
-    32% 35%,
-    32% 34%,
-    32% 31%,
-    32% 29%,
-    32% 26%,
-    31% 23%,
-    31% 20%,
-    32% 18%,
-    32% 16%,
-    33% 16%,
-    34% 18%,
-    36% 22%,
-    36% 22%,
-    38% 19%,
-    39% 17%,
-    39% 14%,
-    39% 12%,
-    39% 11%,
-    40% 8%,
-    40% 6%,
-    41% 4%,
-    41% 3%,
-    44% 2%,
-    44% 2%,
-    45% 1%,
-    48% 2%,
-    49% 3%,
-    50% 3%,
-    51% 2%,
-    53% 1%,
-    55% 0%,
-    56% 0%,
-    57% 0%,
-    58% 0%,
-    60% 0%
-  );
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contect-part h1.stranger {
+  z-index: 9999;
   font-size: 32px;
   color: #fffffe;
   position: relative;
@@ -205,13 +48,17 @@
   margin-bottom: 5px;
   padding: 12px 0 2px 18px;
 }
+
 .contect-part span.stran {
   color: #222222;
 }
+
 .bg-ytext {
+  z-index: 9999;
   background: #00c8da;
   color: white;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -222,57 +69,288 @@
 }
 
 .typing-text {
+  z-index: 9999;
   overflow: hidden;
   font-weight: bold;
-  /* border-right: 6px solid #00c8da; */
   white-space: nowrap;
   margin: 0;
-  letter-spacing: 4px; /* Adjust letter spacing as needed */
-  animation: typing 3s steps(20, end); /* Adjust the duration and steps as needed */
+  letter-spacing: 4px;
+  animation: typing 3s steps(20, end);
   color: #ffc455;
   font-size: 70px;
 }
+
 .hero-subhead {
   border-left: 4px solid #00c8da;
   padding: 6px;
   font-size: 20px;
+  z-index: 999;
 }
-.home-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid black;
-  height: 150px;
-}
+
 .mt-20 {
   margin-top: 20px !important;
 }
+
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Adjust the margin as needed */
+  margin-bottom: 10px;
 }
 
 .social-icon {
-  font-size: 24px; /* Adjust the font size as needed */
-  margin: 0 10px; /* Adjust the horizontal spacing between icons */
-  transition: color 0.3s ease; /* Add a smooth color transition effect */
+  z-index: 9999;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
+
 .fb-color {
   color: #3b5999;
 }
+
 .linkedin-color {
   color: #0077b5;
 }
+
 .twitter-color {
   color: #1da1f2;
 }
+
 .google-color {
-  color: #4285f4;
+  color: #edab2e;
 }
+
 .insta-color {
   color: #833ab4;
 }
+
 .social-icon:hover {
-  color: #007bff; /* Change the color on hover */
+  color: #007bff;
+}
+
+/* Assuming shape2.svg is a different shape with different animation */
+.shape1 {
+  width: 40px;
+  position: absolute;
+  bottom: 200px;
+  left: 30px;
+  animation: shape1Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes shape1Animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.headText {
+  z-index: 999;
+}
+.shape3 {
+  width: 50px;
+  position: absolute;
+  top: 142px;
+  left: 510px;
+  animation: shape3Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes shape3Animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shape4 {
+  width: 40px;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  animation: shape4Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes shape4Animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  .home-container {
+    height: 100%;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .left-content,
+  .right-content {
+    height: 100%;
+  }
+  .typing-text {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .typing-text {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .typing-text {
+    font-size: 50px;
+  }
+}
+/* Assuming existing styles above */
+
+.home-box {
+  background-color: #f5f5f5;
+  /* padding: 20px;
+  margin: 10px; */
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-box:hover {
+  background-color: #ddd;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .home-box {
+    width: 100%;
+  }
+}
+.btn-color {
+  background: #dc3545;
+  border: #dc3545;
+  box-shadow: 10px 10px 5px #dc35454f;
+}
+.btn-color:hover {
+  background: #00c8da;
+  border: #00c8da;
+  box-shadow: 10px 10px 5px #00c8da4a;
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  /* transform: rotate(-25deg) skew(25deg); */
+  transform-style: preserve-3d;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  /* background: #2a2a2a; */
+  transform-origin: top;
+  transform: skewX(-41deg);
+}
+ul li:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  /* background: #2a2a2a; */
+  transform-origin: right;
+  transform: skewY(-49deg);
+}
+ul li span {
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 70%;
+  display: flex !important;
+  /* background: #2a2a2a; */
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px !important;
+  transition: 1.5s ease-out;
+  box-shadow: -2px 2px 2px 2px;
+}
+ul li:hover {
+  margin: 0px 20px;
+}
+ul li:hover span {
+  z-index: 1000;
+  transition: 0.3s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+ul li:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+ul li:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: 0.8;
+}
+ul li:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: 0.6;
+}
+ul li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: 0.4;
+}
+ul li:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: 0.2;
+}
+ul li:nth-child(1):hover span {
+  background: #3b5999 !important;
+}
+ul li:nth-child(2):hover span {
+  background: #1da1f2 !important;
+}
+ul li:nth-child(3):hover span {
+  background: #833ab4 !important;
+}
+ul li:nth-child(4):hover span {
+  background: #0077b5 !important;
+}
+ul li:nth-child(5):hover span {
+  background: #edab2e !important;
 }
