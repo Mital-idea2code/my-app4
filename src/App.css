@@ -39,3 +39,12 @@
 .p-0 {
   padding: 0px !important;
 }
+.z-999 {
+  z-index: 999;
+}
+.sky-color {
+  color: #00c8da;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}

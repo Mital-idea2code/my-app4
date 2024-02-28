@@ -1,0 +1,44 @@
+.home-box {
+  background-color: #f5f5f5;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  margin: 6px 6px 6px 0;
+}
+
+.home-box:hover .icon {
+  opacity: 0;
+}
+.home-box:hover .text {
+  opacity: 1;
+  transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg); /* Flip-up transformation on hover */
+}
+.about-bg {
+  background: #41c3ac9e;
+}
+.edu-bg {
+  background: #eb778a;
+}
+.home-bg {
+  background: #8a77eb;
+}
+.exeperience-bg {
+  background: #9b59b6d4;
+}
+
+.portfolio-bg {
+  background: #198754c2;
+}
+
+.testimonial-bg {
+  background: #ffa500;
+}
+
+.contact-bg {
+  background: #3498db;
+}

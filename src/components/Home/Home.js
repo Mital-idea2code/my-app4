@@ -1,8 +1,9 @@
 // src/components/Home.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css"; // Create this file for custom styles
+import Navigation from "../Navigation/Navigation";
 import HeroBg from "../../assets/images/hero-bg.png";
 import shape1 from "../../assets/images/shape/1.svg";
 import shape2 from "../../assets/images/shape/2.svg";
@@ -26,9 +27,9 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-const Home = () => {
+const Home = ({ onSectionChange }) => {
   return (
-    <Container fluid className="home-container">
+    <Container fluid className="home-container" data-aos="fade-left">
       <Row>
         {/* Left side content */}
         <Col xs={12} md={7} className="left-content  d-flex flex-column justify-content-center align-items-center">
@@ -42,12 +43,6 @@ const Home = () => {
           </p>
           {/* Social icons go here */}
           <div className="social-icons">
-            {/* <FaFacebook className="social-icon fb-color" />
-            <FaLinkedin className="social-icon linkedin-color" />
-            <FaTwitter className="social-icon twitter-color" />
-            <FaGoogle className="social-icon google-color" />
-            <FaInstagram className="social-icon insta-color" /> */}
-
             <ul>
               <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
@@ -106,61 +101,22 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="z-999 mb-5">
             <Button className="btn-color download-btn">Download CV</Button>
           </div>
           {/* New shape with animation */}
-
-          <Image src={shape1} alt="Shape1" fluid className="shape1" />
-          <Image src={shape2} alt="Shape2" fluid className="shape2" />
-          <Image src={shape3} alt="Shape3" fluid className="shape3" />
-          <Image src={shape4} alt="Shape4" fluid className="shape4" />
-          <Image src={shape3} alt="Shape3" fluid className="shape3-1" />
-          <Image src={shape5} alt="Shape5" fluid className="shape5" />
+          <Image src={shape1} alt="Shape1" fluid className="shape1 shape-animation" />
+          <Image src={shape2} alt="Shape2" fluid className="shape2 shape-animation" />
+          <Image src={shape3} alt="Shape3" fluid className="shape3 shape-animation" />
+          <Image src={shape4} alt="Shape4" fluid className="shape4 shape-animation" />
+          <Image src={shape3} alt="Shape3" fluid className="shape3-1 shape-animation" />
+          <Image src={shape5} alt="Shape5" fluid className="shape5 shape-animation" />
         </Col>
 
-        {/* Center content */}
-        <Col xs={12} md={1} className="center-content d-flex flex-column justify-content-center align-items-center p-0">
-          <Col className="home-box  d-flex flex-column justify-content-center align-items-center about-bg">
-            <div class="background-container">
-              <FaUser className="icon" />
-              <span class="text">ABOUT ME</span>
-            </div>
-          </Col>
-          <Col className="home-box  d-flex flex-column justify-content-center align-items-center edu-bg ">
-            <div class="background-container">
-              <FaPen className="icon" />
-              <span class="text">EDUCATION</span>
-            </div>
-          </Col>
-          <Col className="home-box  d-flex flex-column justify-content-center align-items-center exeperience-bg ">
-            <div class="background-container">
-              <FaCertificate className="icon" />
-              <span class="text">EXPERIENCE</span>
-            </div>
-          </Col>
-          <Col className="home-box  d-flex flex-column justify-content-center align-items-center portfolio-bg ">
-            <div class="background-container">
-              <FaAddressBook className="icon" />
-              <span class="text">PORTFOLIO</span>
-            </div>
-          </Col>
-          <Col className="home-box  d-flex flex-column justify-content-center align-items-center testimonial-bg ">
-            <div class="background-container">
-              <FaUsers className="icon" />
-              <span class="text">TESTIMONIAL</span>
-            </div>
-          </Col>
-          <Col className="home-box  d-flex flex-column justify-content-center align-items-center contact-bg ">
-            <div class="background-container">
-              <FaEnvelope className="icon" />
-              <span class="text">CONTACT ME</span>
-            </div>
-          </Col>
-        </Col>
-
+        {/* Navbar content */}
+        <Navigation onSectionChange={onSectionChange} />
         {/* Right side content */}
-        <Col xs={12} md={4} className="right-content">
+        <Col xs={12} md={4} className="right-content z-999">
           <Image src={HeroBg} alt="User" fluid className="user-image heroImg" />
         </Col>
       </Row>
