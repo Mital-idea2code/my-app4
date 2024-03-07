@@ -1,6 +1,6 @@
 /* src/components/HomePage.css */
 .home-container {
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
 .right-content {
   text-align: center;
   padding: 0px;
-  height: 100vh; /* Full screen height */
+  height: 100vh;
 }
 .center-content {
   z-index: 999;
@@ -128,7 +128,6 @@
   color: #007bff;
 }
 
-/* Assuming shape1.svg is a different shape with different animation */
 .shape1 {
   width: 40px;
   position: absolute;
@@ -166,7 +165,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2); /* Adjust the scale factor for zoom in effect */
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -176,8 +175,8 @@
   width: 50px;
   height: 50px; /* Ensure a square shape for a circular effect */
   position: absolute;
-  top: 142px;
-  left: 548px;
+  top: 112px;
+  left: 630px;
   animation: shape3Animation 5s linear infinite;
   z-index: inherit;
 }
@@ -196,7 +195,7 @@
 
 .shape3-1 {
   width: 81px;
-  height: 110px;
+  /* height: 110px; */
   position: absolute;
   top: -47px;
   left: -35px;
@@ -209,7 +208,7 @@
     transform: translateX(0) rotate(0deg);
   }
   100% {
-    transform: translateX(0) rotate(360deg); /* Rotate 360 degrees for a circular motion */
+    transform: translateX(0) rotate(360deg);
   }
 }
 
@@ -238,7 +237,7 @@
   width: 160px;
   position: absolute;
   bottom: 0px;
-  left: 680px;
+  left: 758px;
   animation: shape5Animation 5s linear infinite;
   z-index: inherit;
 }
@@ -255,11 +254,10 @@
   }
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 767px) {
   .home-container {
     height: 100%;
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px;
   }
   .left-content,
   .right-content {
@@ -312,17 +310,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: bottom; /* Set transform origin to the bottom for flip-up effect */
+  transform-origin: bottom;
   z-index: 1;
   color: #ffffff;
-  transform: translate(-50%, -50%) perspective(1000px) rotateX(-90deg); /* Initial flip-up transformation */
-  opacity: 0; /* Initially hide the icon and text */
+  transform: translate(-50%, -50%) perspective(1000px) rotateX(-90deg);
+  opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .home-container {
     padding: 20px;
@@ -352,7 +349,6 @@
 ul {
   position: relative;
   display: flex;
-  /* transform: rotate(-25deg) skew(25deg); */
   transform-style: preserve-3d;
 }
 ul li {
@@ -368,7 +364,6 @@ ul li:before {
   left: -5px;
   width: 100%;
   height: 10px;
-  /* background: #2a2a2a; */
   transform-origin: top;
   transform: skewX(-41deg);
 }

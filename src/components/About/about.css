@@ -122,12 +122,12 @@ img {
   position: absolute;
   left: 12%;
   top: 5%;
-  box-shadow: rgb(0 0 0) 0px 7px 50px 0px;
+  box-shadow: rgb(0 0 0 / 51%) 0px 7px 50px 0px;
   transition: all 0.2s ease-out;
 }
 .about-me-flex-container .about-me-image .main-image:hover {
   transform-origin: top center;
-  transform: scale(1.5);
+  transform: scale(1.3);
   border-radius: 25px;
 }
 .about-me-flex-container .about-me-image .main-image img {
@@ -201,7 +201,7 @@ img {
 .mail-button2 {
   background-color: #001925;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   border: 10px solid #001925;
 }
@@ -246,3 +246,185 @@ img {
 .slateblue-bg {
   background: slateblue;
 }
+
+.left-content {
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.home-box {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-box.active {
+  background-color: #007bff;
+}
+
+.background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.left-content::-webkit-scrollbar {
+  display: none;
+}
+
+.about_shape4 {
+  width: 50px;
+  position: absolute;
+  border: 100px;
+  top: 120px;
+  right: 300px;
+  animation: about_shape4Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes about_shape4Animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about_shape3 {
+  width: 50px;
+  height: 50px; /* Ensure a square shape for a circular effect */
+  position: absolute;
+  bottom: 20px;
+  left: 600px;
+  animation: about_shape3Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes about_shape3Animation {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+.about_shape2 {
+  width: 20px;
+  position: absolute;
+  top: 13px;
+  left: 128px;
+  animation: about_shape2Animation 5s linear infinite alternate;
+  z-index: inherit;
+}
+
+@keyframes about_shape2Animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.about_shape2-1 {
+  width: 20px;
+  position: absolute;
+  top: 13px;
+  left: 128px;
+  animation: about_shape2-1Animation 5s linear infinite alternate;
+  z-index: inherit;
+}
+
+@keyframes about_shape2-1Animation {
+  0% {
+    transform: translateX(0) translateY(0); /* Start position: no translation */
+  }
+  50% {
+    transform: translateX(50px) translateY(50px); /* Middle position: move across and down */
+  }
+  100% {
+    transform: translateX(0) translateY(0); /* End position: back to start */
+  }
+}
+
+.about_shape1 {
+  width: 40px;
+  position: absolute;
+  bottom: 100px;
+  right: 300px;
+  animation: about_shape1Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes about_shape1Animation {
+  0% {
+    transform: translateY(-50px);
+  }
+  25% {
+    transform: translateY(-50px) translateX(50px);
+  }
+  50% {
+    transform: translateY(0) translateX(50px);
+  }
+  75% {
+    transform: translateY(50px) translateX(50px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.about_shape1-1 {
+  width: 40px;
+  position: absolute;
+  bottom: 261px;
+  left: 113px;
+  animation: about_shape1-1Animation 5s linear infinite;
+  z-index: inherit;
+}
+
+@keyframes about_shape1-1Animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* .about-me-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-image {
+  position: relative;
+}
+
+.experience-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+} */

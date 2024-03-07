@@ -10,22 +10,7 @@ import shape2 from "../../assets/images/shape/2.svg";
 import shape3 from "../../assets/images/shape/3.svg";
 import shape4 from "../../assets/images/shape/4.svg";
 import shape5 from "../../assets/images/shape/33.jpg";
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaTwitter,
-  FaGoogle,
-  FaInstagram,
-  FaUser,
-  FaEdit,
-  FaPen,
-  FaCertificate,
-  FaBook,
-  FaAddressBook,
-  FaPlusCircle,
-  FaUsers,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter, FaGoogle, FaInstagram } from "react-icons/fa";
 
 const Home = ({ onSectionChange }) => {
   return (

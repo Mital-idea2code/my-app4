@@ -40,10 +40,15 @@ const Navigation = ({ onSectionChange, activeSection }) => {
           <span class="text">EDUCATION</span>
         </div>
       </Col>
-      <Col className="home-box  d-flex flex-column justify-content-center align-items-center nav-content exeperience-bg ">
+      <Col
+        className={`home-box d-flex flex-column justify-content-center align-items-center nav-content skill-bg ${
+          activeSection === "skill" ? "active" : ""
+        }`}
+        onClick={() => onSectionChange("skill")}
+      >
         <div class="background-container">
           <FaCertificate className="icon" />
-          <span class="text">EXPERIENCE</span>
+          <span class="text">SKILLS</span>
         </div>
       </Col>
       <Col className="home-box  d-flex flex-column justify-content-center align-items-center nav-content portfolio-bg ">
