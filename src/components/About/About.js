@@ -1,6 +1,6 @@
 // src/components/About.js
 import React from "react";
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Row, Col, Image, Button, Card, ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./about.css";
 import Navigation from "../Navigation/Navigation";
@@ -18,7 +18,7 @@ const About = ({ onSectionChange }) => {
       <Row>
         {/* Left side content */}
         <Col xs={12} md={11} className="left-content p-5">
-          <section className="about-me" id="about-me">
+          <section className="about-me mb-50" id="about-me">
             <div className="container">
               <div className="about-me-container">
                 <h1 className="headText mb-40">
@@ -41,15 +41,6 @@ const About = ({ onSectionChange }) => {
 
                       <div className="main-image">
                         <Image src={Profile1} alt="smit" />
-                        {/* Circular overlay with text */}
-                        {/* <motion.div
-                          className="experience-overlay"
-                          initial={{ opacity: 0, scale: 0.5 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.5 }}
-                        >
-                          8+ year experience
-                        </motion.div> */}
                       </div>
                     </div>{" "}
                   </motion.div>
@@ -105,6 +96,56 @@ const About = ({ onSectionChange }) => {
           {/* <Image src={shape2} alt="Shape2" fluid className="about_shape2-1 shape-animation" /> */}
           <Image src={shape3} alt="Shape3" fluid className="about_shape3 shape-animation" />
           <Image src={shape4} alt="Shape4" fluid className="about_shape4 shape-animation" />
+
+          <Row>
+            {/* Happy Clients Card */}
+            <Col md={3}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Year Experience</Card.Title>
+                  <Card.Text>
+                    <strong>10+</strong>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            {/* Happy Clients Card */}
+            <Col md={3}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Happy Clients</Card.Title>
+                  <Card.Text>
+                    <strong>1500+</strong>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            {/* Projects Completed Card */}
+            <Col md={3}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Projects Completed</Card.Title>
+                  <Card.Text>
+                    <strong>200+</strong>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            {/* Reviews Counter Card */}
+            <Col md={3}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Reviews</Card.Title>
+                  <Card.Text>
+                    <strong>189+</strong>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
         </Col>
 
         {/* Navbar content */}
