@@ -8,6 +8,7 @@ import Skill from "./components/Skill/Skill";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />;
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");

@@ -86,7 +86,7 @@ const Home = ({ onSectionChange }) => {
               </li>
             </ul>
           </div>
-          <div className="z-999 mb-5">
+          <div className="z-999 mb-5 vibrate-1">
             <Button className="btn-color download-btn">Download CV</Button>
           </div>
           {/* New shape with animation */}

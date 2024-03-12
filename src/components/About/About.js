@@ -5,7 +5,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./about.css";
 import Navigation from "../Navigation/Navigation";
 import Profile1 from "../../assets/images/02.jpeg";
-import { FaBirthdayCake, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaBirthdayCake,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaFlag,
+  FaSmile,
+  FaCheckCircle,
+  FaStar,
+  FaCalendar,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import shape1 from "../../assets/images/shape/1.svg";
 import shape2 from "../../assets/images/shape/2.svg";
@@ -18,14 +28,14 @@ const About = ({ onSectionChange }) => {
       <Row>
         {/* Left side content */}
         <Col xs={12} md={11} className="left-content p-5">
-          <section className="about-me mb-50" id="about-me">
+          <section className="about-me " id="about-me">
             <div className="container">
               <div className="about-me-container">
                 <h1 className="headText mb-40">
                   <span class="bg-ytext">About Josh W</span>
                   <span class="stran about-me-title">alker!</span>{" "}
                 </h1>
-                <div className="about-me-flex-container">
+                <div className="about-me-flex-container mb-50">
                   <motion.div
                     initial={{ y: -20 }}
                     animate={{ y: 20 }}
@@ -71,7 +81,8 @@ const About = ({ onSectionChange }) => {
                         <span className="details-text">20, Bardeshi, Dhaka</span>
                       </Col>
                     </Row>
-                    <div className="z-999 mt-4 text-center">
+                    {/*  */}
+                    <div className="z-999 mt-4 text-center bounce-top ">
                       <Button className="btn-color download-btn">Download CV</Button>
                     </div>
                   </div>
@@ -97,55 +108,68 @@ const About = ({ onSectionChange }) => {
           <Image src={shape3} alt="Shape3" fluid className="about_shape3 shape-animation" />
           <Image src={shape4} alt="Shape4" fluid className="about_shape4 shape-animation" />
 
-          <Row>
-            {/* Happy Clients Card */}
-            <Col md={3}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Year Experience</Card.Title>
-                  <Card.Text>
-                    <strong>10+</strong>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+          <Container>
+            <Row className="no-gutters">
+              {/* Year Experience Card */}
+              <Col
+                xs={12}
+                sm={6}
+                md={3}
+                className="px-0 d-flex align-items-center  justify-content-center border-right roll-in-left"
+              >
+                <div>
+                  <FaFlag size={50} color="#007bff" className="counter-icon " />
+                </div>
 
-            {/* Happy Clients Card */}
-            <Col md={3}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Happy Clients</Card.Title>
-                  <Card.Text>
-                    <strong>1500+</strong>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+                <div className="ml-8pr">
+                  <span className="f-16">Year Experience</span>
+                  <p className="about-counter">10</p>
+                </div>
+              </Col>
 
-            {/* Projects Completed Card */}
-            <Col md={3}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Projects Completed</Card.Title>
-                  <Card.Text>
-                    <strong>200+</strong>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+              {/* Happy Clients Card */}
+              <Col
+                xs={12}
+                sm={6}
+                md={3}
+                className="px-0 d-flex align-items-center  justify-content-center  border-right roll-in-left"
+              >
+                <FaSmile size={50} color="#28a745" className="counter-icon " />
+                <div className="ml-8pr">
+                  <span className="f-16">Happy Clients</span>
+                  <p className="about-counter">375</p>
+                </div>
+              </Col>
 
-            {/* Reviews Counter Card */}
-            <Col md={3}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Reviews</Card.Title>
-                  <Card.Text>
-                    <strong>189+</strong>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+              {/* Projects Completed Card */}
+              <Col
+                xs={12}
+                sm={6}
+                md={3}
+                className="px-0 d-flex align-items-center  justify-content-center  border-right roll-in-left"
+              >
+                <FaCheckCircle size={50} color="#17a2b8" className="counter-icon " />
+                <div className="ml-8pr">
+                  <span className="f-16">Projects Completed</span>
+                  <p className="about-counter">500</p>
+                </div>
+              </Col>
+
+              {/* Reviews Counter Card */}
+              <Col
+                xs={12}
+                sm={6}
+                md={3}
+                className="px-0 d-flex align-items-center  justify-content-center  roll-in-left"
+              >
+                <FaStar size={50} color="#ffc107" className="counter-icon " />
+                <div className="ml-8pr">
+                  <span className="f-16">Client Reviews</span>
+                  <p className="about-counter">375</p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Col>
 
         {/* Navbar content */}
@@ -156,3 +180,14 @@ const About = ({ onSectionChange }) => {
 };
 
 export default About;
+
+{
+  /* <Card className="roll-in-left">
+                  <Card.Body>
+                    <Card.Title>Reviews</Card.Title>
+                    <Card.Text>
+                      <strong>189+</strong>
+                    </Card.Text>
+                  </Card.Body>
+                </Card> */
+}
